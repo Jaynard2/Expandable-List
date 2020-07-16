@@ -1,0 +1,22 @@
+ <link rel="stylesheet" href=="ExpandableList.css">
+ 
+ <!--Start expandable-list-->
+        <div class="expandable-list"> <!--All expandable-lists must be wrapped in a .expandable-list container-->
+            <span class="expandable-list-title" role="button" aria-pressed="false">Title</span> <!--expandable-list title can be any tag, but must have .expandable-list-title-->
+            <!--No other markup is necessary-->
+            <ul>
+                <li>Object One</li>
+                <li>Object 2</li>
+                <li class="expandable-list">
+                            <!--Lists can be in other lists-->
+                            <span class="expandable-list-title" role="button" aria-pressed="false">Embedded List</span>
+                            <ul>
+                                <li>Object One</li>
+                                <li>Object 2</li>
+                                <li>Etc.</li>
+                            </ul>
+            </ul>
+        </div> 
+<!--End expandable-list-->
+
+<script src="ExpandableList.js">
